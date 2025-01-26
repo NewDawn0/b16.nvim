@@ -60,6 +60,11 @@ M.apply = function()
 	-- Treesitter syntax highlighting
 	setHl({ "@variable" }, { fg = c.base08 })
 	setHl({ "@comment.note" }, { fg = c.base06 })
+	-- loader.nvim
+	setHl({ "loaderheader" }, { fg = c.base0E })
+	setHl({ "loaderloaded" }, { fg = c.base0B })
+	setHl({ "loadernotLoaded" }, { fg = c.base08 })
+	setHl({ "loaderinfo" }, { fg = c.base0C })
 end
 
 M.setup = function(opts)
