@@ -65,6 +65,12 @@ M.apply = function()
 	setHl({ "loaderloaded" }, { fg = c.base0B })
 	setHl({ "loadernotLoaded" }, { fg = c.base08 })
 	setHl({ "loaderinfo" }, { fg = c.base0C })
+	-- telescope.nvim
+	setHl({ "TelescopeTitle", "TelescopeBorder" }, { fg = c.base0D, bg = "NONE" })
+	setHl({ "TelescopePromptTitle", "TelescopePromptBorder" }, { fg = c.base0E, bg = "NONE" })
+	setHl({ "TelescopePreviewTitle", "TelescopePreviewBorder" }, { fg = c.base09, bg = "NONE" })
+	setHl({ "TelescopeMatching" }, { fg = c.base09 })
+	setHl({ "TelescopePreviewLink" }, { fg = c.base0C })
 end
 
 M.setup = function(opts)
