@@ -63,7 +63,7 @@ M.apply = function()
 end
 
 M.setup = function(opts)
-	M.defaults = vim.tbl_deep_extend("keep", opts, M.defaults)
+	M.defaults = vim.tbl_deep_extend("keep", opts or {}, M.defaults)
 	M.apply()
 end
 
