@@ -43,6 +43,10 @@ M.apply = function()
 		"VertSplit",
 		"Border",
 	}, { fg = c.base0D, bg = "NONE", bold = true })
+	-- Diffs
+	setHl({ "@diff.minus" }, { fg = c.base08 })
+	setHl({ "@diff.delta" }, { fg = c.base0D })
+	setHl({ "@diff.plus" }, { fg = c.base0B })
 	-- Line nrs
 	setHl({ "LineNr" }, { fg = c.base0D, bold = true })
 	setHl({ "LineNrAbove", "LineNrBelow" }, { fg = c.base03 })
@@ -71,6 +75,10 @@ M.apply = function()
 	setHl({ "TelescopePreviewTitle", "TelescopePreviewBorder" }, { fg = c.base09, bg = "NONE" })
 	setHl({ "TelescopeMatching" }, { fg = c.base09 })
 	setHl({ "TelescopePreviewLink" }, { fg = c.base0C })
+	-- gitsigns.nvim
+	setHl({ "GitSignsAdd", "GitSignsUntracked" }, { fg = c.base0B })
+	setHl({ "GitSignsChange" }, { fg = c.base0D })
+	setHl({ "GitSignsDelete" }, { fg = c.base09 })
 end
 
 M.setup = function(opts)
