@@ -6,7 +6,7 @@
   outputs = { self, utils }: {
     overlays.default = final: prev: {
       vimPlugins = prev.vimPlugins // {
-        loader-nvim = self.packages.${prev.system}.default;
+        b16-nvim = self.packages.${prev.system}.default;
       };
     };
     packages = utils.lib.eachSystem { } (pkgs: {
