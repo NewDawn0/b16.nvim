@@ -1,6 +1,6 @@
 local M = {}
 
-M.defaults = {
+M.config = {
 	cols = {
 		base00 = "#181818", -- Background
 		base01 = "#282828", -- Lighter Background
@@ -20,6 +20,7 @@ M.defaults = {
 		base0F = "#a16946", -- Deprecated, Opening/Closing Embedded Tags  TODO:
 	},
 }
+M.cols = M.config.cols
 
 local function setHl(groups, opts)
 	for _, group in ipairs(groups) do
@@ -28,7 +29,7 @@ local function setHl(groups, opts)
 end
 
 M.apply = function()
-	local c = M.defaults.cols
+	local c = M.cols
 	-- Remove bg
 	setHl({
 		"Normal",
@@ -79,10 +80,15 @@ M.apply = function()
 	setHl({ "GitSignsAdd", "GitSignsUntracked" }, { fg = c.base0B })
 	setHl({ "GitSignsChange" }, { fg = c.base0D })
 	setHl({ "GitSignsDelete" }, { fg = c.base09 })
+	-- nvim-notify
+	setHl({ "NotifyERRORBorder", "NotifyERRORIcon", "NotifyERRORTitle" }, { fg = c.base08, bg = "NONE" })
+	setHl({ "NotifyWARNBorder", "NotifyWARNIcon", "NotifyWARNTitle" }, { fg = c.base0A, bg = "NONE" })
+	setHl({ "NotifyINFOBorder", "NotifyINFOIcon", "NotifyINFOTitle" }, { fg = c.base0B, bg = "NONE" })
+	setHl({ "NotifyTRACEBorder", "NotifyTRACEIcon", "NotifyTRACETitle" }, { fg = c.base0C, bg = "NONE" })
 end
 
 M.setup = function(opts)
-	M.defaults = vim.tbl_deep_extend("keep", opts or {}, M.defaults)
+	M.cols = vim.tbl_deep_extend("keep", opts or {}, M.config.cols)
 	M.apply()
 end
 
