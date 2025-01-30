@@ -51,6 +51,9 @@ M.apply = function()
 	-- Line nrs
 	setHl({ "LineNr" }, { fg = c.base0D, bold = true })
 	setHl({ "LineNrAbove", "LineNrBelow" }, { fg = c.base03 })
+	-- Other
+	setHl({ "MoreMsg", "Directory", "Question" }, { fg = c.base0D })
+	setHl({ "StatusLine" }, { bg = c.base02 })
 	-- Vim syntax highlighting
 	setHl({ "Comment" }, { fg = c.base03, italic = true })
 	setHl({ "Delimiter" }, { fg = c.base04 })
