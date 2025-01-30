@@ -51,6 +51,11 @@ M.apply = function()
 	-- Line nrs
 	setHl({ "LineNr" }, { fg = c.base0D, bold = true })
 	setHl({ "LineNrAbove", "LineNrBelow" }, { fg = c.base03 })
+	-- Diagnostics
+	setHl({ "DiagnosticError" }, { fg = c.base08 })
+	setHl({ "DiagnosticWarn" }, { fg = c.base0A })
+	setHl({ "DiagnosticInfo" }, { fg = c.base0B })
+	setHl({ "DiagnosticHint" }, { fg = c.base0C })
 	-- Other
 	setHl({ "MoreMsg", "Directory", "Question" }, { fg = c.base0D })
 	setHl({ "StatusLine" }, { bg = c.base02 })
