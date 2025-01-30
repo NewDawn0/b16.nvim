@@ -45,9 +45,9 @@ M.apply = function()
 		"Border",
 	}, { fg = c.base0D, bg = "NONE", bold = true })
 	-- Diffs
-	setHl({ "@diff.minus" }, { fg = c.base08 })
-	setHl({ "@diff.delta" }, { fg = c.base0D })
-	setHl({ "@diff.plus" }, { fg = c.base0B })
+	setHl({ "@diff.minus", "DiffDelete" }, { fg = c.base08 })
+	setHl({ "@diff.delta", "DiffChange" }, { fg = c.base0D })
+	setHl({ "@diff.plus", "DiffAdd" }, { fg = c.base0B })
 	-- Line nrs
 	setHl({ "LineNr" }, { fg = c.base0D, bold = true })
 	setHl({ "LineNrAbove", "LineNrBelow" }, { fg = c.base03 })
