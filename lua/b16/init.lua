@@ -136,6 +136,13 @@ M.apply = function()
 	-- Flash
 	M.setHl({ "FlashBackdrop" }, { fg = c.base03 })
 	M.setHl({ "FlashLabel" }, { fg = c.base0F })
+	-- Noice
+	M.setHl({ "NoiceCmdlineIconInput" }, { fg = c.base08 })
+	M.setHl({ "NoiceCmdlineIconLua" }, { fg = c.base08 })
+	M.setHl({ "NoiceCmdlinePopupBorderInput" }, { fg = c.base0D })
+	M.setHl({ "NoiceCmdlinePopupBorderLua" }, { fg = c.base08 })
+	M.setHl({ "NoiceCmdlinePopupTitleInput" }, { fg = c.base08 })
+	M.setHl({ "NoiceCmdlinePopupTitleLua" }, { fg = c.base08 })
 	-- Apply overrides
 	M.config.overrides(M.config.cols)
 end
