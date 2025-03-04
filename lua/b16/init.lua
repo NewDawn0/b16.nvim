@@ -140,6 +140,14 @@ M.apply = function()
 	-- Flash
 	M.setHl({ "FlashBackdrop" }, { fg = c.base03 })
 	M.setHl({ "FlashLabel" }, { fg = c.base0F })
+	-- Rainbow delimiters
+	M.setHl({ "RainbowDelimiterRed" }, { fg = c.base08 })
+	M.setHl({ "RainbowDelimiterOrange" }, { fg = c.base09 })
+	M.setHl({ "RainbowDelimiterYellow" }, { fg = c.base0A })
+	M.setHl({ "RainbowDelimiterGreen" }, { fg = c.base0B })
+	M.setHl({ "RainbowDelimiterCyan" }, { fg = c.base0C })
+	M.setHl({ "RainbowDelimiterBlue" }, { fg = c.base0D })
+	M.setHl({ "RainbowDelimiterViolet" }, { fg = c.base0E })
 	-- Noice
 	M.setHl({ "NoiceCmdlineIconInput" }, { fg = c.base08 })
 	M.setHl({ "NoiceCmdlineIconLua" }, { fg = c.base08 })
