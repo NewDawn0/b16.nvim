@@ -128,6 +128,8 @@ M.apply = function()
 	M.setHl({ "NotifyWARNBorder", "NotifyWARNIcon", "NotifyWARNTitle" }, { fg = c.base0A, bg = "NONE" })
 	M.setHl({ "NotifyINFOBorder", "NotifyINFOIcon", "NotifyINFOTitle" }, { fg = c.base0B, bg = "NONE" })
 	M.setHl({ "NotifyTRACEBorder", "NotifyTRACEIcon", "NotifyTRACETitle" }, { fg = c.base0C, bg = "NONE" })
+	-- Buffferline
+	M.setHl({ "BufferLineIndicatorSelected" }, { fg = c.base0D })
 	-- Apply overrides
 	M.config.overrides(M.config.cols)
 end
