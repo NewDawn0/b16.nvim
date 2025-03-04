@@ -143,6 +143,11 @@ M.apply = function()
 	M.setHl({ "NoiceCmdlinePopupBorderLua" }, { fg = c.base08 })
 	M.setHl({ "NoiceCmdlinePopupTitleInput" }, { fg = c.base08 })
 	M.setHl({ "NoiceCmdlinePopupTitleLua" }, { fg = c.base08 })
+	-- Indent blankline nvim
+	M.setHl({ "IndentBlanklineChar" }, { fg = c.base03 })
+	M.setHl({ "IndentBlanklineContextChar" }, { fg = c.base0D })
+	M.setHl({ "IblIndent" }, { fg = c.base03 })
+	M.setHl({ "IblScope" }, { fg = c.base0D })
 	-- Apply overrides
 	M.config.overrides(M.config.cols)
 end
