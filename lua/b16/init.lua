@@ -130,6 +130,9 @@ M.apply = function()
 	M.setHl({ "NotifyTRACEBorder", "NotifyTRACEIcon", "NotifyTRACETitle" }, { fg = c.base0C, bg = "NONE" })
 	-- Buffferline
 	M.setHl({ "BufferLineIndicatorSelected" }, { fg = c.base0D })
+	-- Ale
+	M.setHl({ "ALEErrorSign" }, { fg = c.base08 })
+	M.setHl({ "ALEWarningSign" }, { fg = c.base0A })
 	-- Apply overrides
 	M.config.overrides(M.config.cols)
 end
