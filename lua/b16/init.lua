@@ -130,6 +130,10 @@ M.apply = function()
 	M.setHl({ "NotifyTRACEBorder", "NotifyTRACEIcon", "NotifyTRACETitle" }, { fg = c.base0C, bg = "NONE" })
 	-- Buffferline
 	M.setHl({ "BufferLineIndicatorSelected" }, { fg = c.base0D })
+	-- Aerial
+	M.setHl({ "AerialNormal" }, { fg = c.base05 })
+	M.setHl({ "AerialGuide" }, { fg = c.base0F })
+	M.setHl({ "AerialLine" }, { fg = c.base0C })
 	-- Ale
 	M.setHl({ "ALEErrorSign" }, { fg = c.base08 })
 	M.setHl({ "ALEWarningSign" }, { fg = c.base0A })
