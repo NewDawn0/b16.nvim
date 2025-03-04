@@ -137,6 +137,8 @@ M.apply = function()
 	-- Ale
 	M.setHl({ "ALEErrorSign" }, { fg = c.base08 })
 	M.setHl({ "ALEWarningSign" }, { fg = c.base0A })
+	-- Dap
+	M.setHl({ "DapStoppedLine" }, { fg = c.base0A })
 	-- Flash
 	M.setHl({ "FlashBackdrop" }, { fg = c.base03 })
 	M.setHl({ "FlashLabel" }, { fg = c.base0F })
