@@ -128,6 +128,23 @@ M.apply = function()
 	M.setHl({ "NotifyWARNBorder", "NotifyWARNIcon", "NotifyWARNTitle" }, { fg = c.base0A, bg = "NONE" })
 	M.setHl({ "NotifyINFOBorder", "NotifyINFOIcon", "NotifyINFOTitle" }, { fg = c.base0B, bg = "NONE" })
 	M.setHl({ "NotifyTRACEBorder", "NotifyTRACEIcon", "NotifyTRACETitle" }, { fg = c.base0C, bg = "NONE" })
+	-- Nvim cmp
+	M.setHl({ "CmpItemKindConstant", "CmpItemKindConstructor", "CmpItemKindReference" }, { fg = "NONE", bg = c.base08 })
+	M.setHl({ "CmpItemKindEnumMember", "CmpItemKindField", "CmpItemKindProperty" }, { fg = "NONE", bg = c.base0A })
+	M.setHl({ "CmpItemKindColor", "CmpItemKindText" }, { fg = "NONE", bg = c.base0B })
+	M.setHl({ "CmpItemKindColor", "CmpItemKindText" }, { fg = "NONE", bg = c.base0B })
+	M.setHl({ "CmpItemKindEvent", "CmpItemKindMethod", "CmpItemKindValue" }, { fg = "NONE", bg = c.base0C })
+	M.setHl({ "CmpItemKindKeyword", "CmpItemKindOperator", "CmpItemKindTypeParameter" }, { fg = "NONE", bg = c.base0F })
+	M.setHl({ "CmpItemKindFolder", "CmpItemKindSnippet", "CmpItemKindUnit" }, { fg = "NONE", bg = c.base08 })
+	M.setHl({ "CmpItemKindFile", "CmpItemKindVariable" }, { fg = "NONE", bg = c.base0D })
+	M.setHl({
+		"CmpItemKindClass",
+		"CmpItemKindEnum",
+		"CmpItemKindFunction",
+		"CmpItemKindInterface",
+		"CmpItemKindModule",
+		"CmpItemKindStruct",
+	}, { fg = "NONE", bg = c.base0E })
 	-- Buffferline
 	M.setHl({ "BufferLineIndicatorSelected" }, { fg = c.base0D })
 	-- Aerial
