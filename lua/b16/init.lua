@@ -44,7 +44,7 @@ M.config = {
 		base0C = "#86c1b9",
 		base0D = "#55bcf7",
 		base0E = "#da84e4",
-		base0F = "#a16946",
+		base0F = "#aeabdf",
 	},
 	overrides = function(cols) end,
 }
