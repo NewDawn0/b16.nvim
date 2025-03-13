@@ -150,7 +150,7 @@ M.apply = function()
 		"CmpItemKindInterface",
 		"CmpItemKindModule",
 		"CmpItemKindStruct",
-	}, { fg = "NONE", bg = c.base0E })
+	}, { fg = c.base00, bg = c.base0D })
 	-- Buffferline
 	M.setHl({ "BufferLineIndicatorSelected" }, { fg = c.base0D })
 	-- Aerial
