@@ -204,10 +204,10 @@ M.apply = function()
 	M.setHl({ "IblScope" }, { fg = c.base0D })
 	-- Alpha nvim
 	M.setHl({ "AlphaShortcut" }, { fg = c.base0A })
-	M.setHl({ "AlphaHeader" }, { fg = c.base0B })
-	M.setHl({ "AlphaHeaderLabel" }, { fg = c.base0C })
-	M.setHl({ "AlphaFooter" }, { fg = c.base0D })
-	M.setHl({ "AlphaButtons" }, { fg = c.baseE })
+	-- M.setHl({ "AlphaHeader" }, { fg = c.base0B })
+	-- M.setHl({ "AlphaHeaderLabel" }, { fg = c.base0C })
+	-- M.setHl({ "AlphaFooter" }, { fg = c.base0D })
+	-- M.setHl({ "AlphaButtons" }, { fg = c.baseE })
 	-- @NOTE: Must be at the end
 	-- Apply overrides
 	M.config.overrides(M.config.cols)
