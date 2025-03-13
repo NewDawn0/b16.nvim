@@ -75,14 +75,17 @@ M.apply = function()
 	-- Menus
 	M.setHl({
 		"Pmenu",
+		"PmenuKind",
+		"PmenuExtra",
+		"PmenuSBar",
 	}, { bg = c.base01 })
 	-- Borders
 	M.setHl({
 		"FloatBorder",
-		"WinSeparator",
 		"VertSplit",
 		"Border",
 	}, { fg = c.base0D, bg = "NONE", bold = true })
+	M.setHl({ "WinSeparator" }, { fg = c.base08, bg = "NONE" })
 	-- Diffs
 	M.setHl({ "@diff.minus", "DiffDelete" }, { fg = c.base08 })
 	M.setHl({ "@diff.delta", "DiffChange" }, { fg = c.base0D })
