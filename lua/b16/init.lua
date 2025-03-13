@@ -133,6 +133,7 @@ M.apply = function()
 	M.setHl({ "NotifyINFOBorder", "NotifyINFOIcon", "NotifyINFOTitle" }, { fg = c.base0B, bg = "NONE" })
 	M.setHl({ "NotifyTRACEBorder", "NotifyTRACEIcon", "NotifyTRACETitle" }, { fg = c.base0C, bg = "NONE" })
 	-- Nvim cmp
+	M.setHl({ "CmpDocumentation", "CmpItemMenu" }, { bg = c.base01 })
 	M.setHl(
 		{ "CmpItemKindConstant", "CmpItemKindConstructor", "CmpItemKindReference" },
 		{ fg = c.base00, bg = c.base08 }
