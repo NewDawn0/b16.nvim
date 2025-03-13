@@ -72,6 +72,10 @@ M.apply = function()
 		"SignColumn",
 		"Statusline",
 	}, { fg = c.base05, bg = "NONE" })
+	-- Menus
+	M.setHl({
+		"Pmenu",
+	}, { bg = c.base01 })
 	-- Borders
 	M.setHl({
 		"FloatBorder",
