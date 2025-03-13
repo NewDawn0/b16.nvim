@@ -129,14 +129,20 @@ M.apply = function()
 	M.setHl({ "NotifyINFOBorder", "NotifyINFOIcon", "NotifyINFOTitle" }, { fg = c.base0B, bg = "NONE" })
 	M.setHl({ "NotifyTRACEBorder", "NotifyTRACEIcon", "NotifyTRACETitle" }, { fg = c.base0C, bg = "NONE" })
 	-- Nvim cmp
-	M.setHl({ "CmpItemKindConstant", "CmpItemKindConstructor", "CmpItemKindReference" }, { fg = "NONE", bg = c.base08 })
-	M.setHl({ "CmpItemKindEnumMember", "CmpItemKindField", "CmpItemKindProperty" }, { fg = "NONE", bg = c.base0A })
-	M.setHl({ "CmpItemKindColor", "CmpItemKindText" }, { fg = "NONE", bg = c.base0B })
-	M.setHl({ "CmpItemKindColor", "CmpItemKindText" }, { fg = "NONE", bg = c.base0B })
-	M.setHl({ "CmpItemKindEvent", "CmpItemKindMethod", "CmpItemKindValue" }, { fg = "NONE", bg = c.base0C })
-	M.setHl({ "CmpItemKindKeyword", "CmpItemKindOperator", "CmpItemKindTypeParameter" }, { fg = "NONE", bg = c.base0F })
-	M.setHl({ "CmpItemKindFolder", "CmpItemKindSnippet", "CmpItemKindUnit" }, { fg = "NONE", bg = c.base08 })
-	M.setHl({ "CmpItemKindFile", "CmpItemKindVariable" }, { fg = "NONE", bg = c.base0D })
+	M.setHl(
+		{ "CmpItemKindConstant", "CmpItemKindConstructor", "CmpItemKindReference" },
+		{ fg = c.base00, bg = c.base08 }
+	)
+	M.setHl({ "CmpItemKindEnumMember", "CmpItemKindField", "CmpItemKindProperty" }, { fg = c.base00, bg = c.base0A })
+	M.setHl({ "CmpItemKindColor", "CmpItemKindText" }, { fg = c.base00, bg = c.base0B })
+	M.setHl({ "CmpItemKindColor", "CmpItemKindText" }, { fg = c.base00, bg = c.base0B })
+	M.setHl({ "CmpItemKindEvent", "CmpItemKindMethod", "CmpItemKindValue" }, { fg = c.base00, bg = c.base0C })
+	M.setHl(
+		{ "CmpItemKindKeyword", "CmpItemKindOperator", "CmpItemKindTypeParameter" },
+		{ fg = c.base00, bg = c.base0F }
+	)
+	M.setHl({ "CmpItemKindFolder", "CmpItemKindSnippet", "CmpItemKindUnit" }, { fg = c.base00, bg = c.base08 })
+	M.setHl({ "CmpItemKindFile", "CmpItemKindVariable" }, { fg = c.base00, bg = c.base0D })
 	M.setHl({
 		"CmpItemKindClass",
 		"CmpItemKindEnum",
