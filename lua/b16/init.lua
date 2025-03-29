@@ -94,10 +94,10 @@ M.apply = function()
 	M.setHl({ "LineNr" }, { fg = c.base0D, bold = true })
 	M.setHl({ "LineNrAbove", "LineNrBelow" }, { fg = c.base03 })
 	-- Diagnostics
-	M.setHl({ "DiagnosticError" }, { fg = c.base08, text = "󰅙" })
-	M.setHl({ "DiagnosticWarn" }, { fg = c.base0A, text = "" })
-	M.setHl({ "DiagnosticInfo" }, { fg = c.base0B, text = "󰌵" })
-	M.setHl({ "DiagnosticHint" }, { fg = c.base0C, text = "󰋼" })
+	M.setHl({ "DiagnosticError" }, { fg = c.base08 })
+	M.setHl({ "DiagnosticWarn" }, { fg = c.base0A })
+	M.setHl({ "DiagnosticInfo" }, { fg = c.base0B })
+	M.setHl({ "DiagnosticHint" }, { fg = c.base0C })
 	-- Other
 	M.setHl({ "MoreMsg", "Directory", "Question" }, { fg = c.base0D })
 	M.setHl({ "StatusLine" }, { bg = c.base02 })
@@ -168,10 +168,6 @@ M.apply = function()
 	-- Ale
 	M.setHl({ "ALEErrorSign" }, { fg = c.base08 })
 	M.setHl({ "ALEWarningSign" }, { fg = c.base0A })
-	-- Dap
-	M.setHl({ "DapStopped", "DapStoppedLine" }, { fg = c.base08, text = "" })
-	M.setHl({ "DapBreakPoint", "DapBreakPointCondition", "DapBreakPointRejected" }, { fg = c.base09, text = "" })
-	M.setHl({ "DapLogPoint" }, { fg = c.base0C, text = "" })
 	-- Flash
 	M.setHl({ "FlashBackdrop" }, { fg = c.base03 })
 	M.setHl({ "FlashLabel" }, { fg = c.base0F })
