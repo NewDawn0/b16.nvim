@@ -71,6 +71,7 @@ M.apply = function()
 		"NormalFloat",
 		"SignColumn",
 		"Statusline",
+    "FloatShadowThrough",
 	}, { fg = c.base05, bg = "NONE" })
 	-- Menus
 	M.setHl({
@@ -160,7 +161,8 @@ M.apply = function()
 		"CmpItemKindStruct",
 	}, { fg = c.base00, bg = c.base0D })
 	-- Buffferline
-	M.setHl({ "BufferLineIndicatorSelected" }, { fg = c.base0D })
+	M.setHl({ "BuffferlineGroupLabel" }, {bg="NONE"})
+	M.setHl({ "BufferLineIndicatorSelected" }, { fg = c.base0D, bg = "NONE" })
 	-- Aerial
 	M.setHl({ "AerialNormal" }, { fg = c.base05 })
 	M.setHl({ "AerialGuide" }, { fg = c.base0F })
